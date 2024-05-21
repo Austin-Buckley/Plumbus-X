@@ -1,0 +1,260 @@
+/*gloabal*/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+}
+
+.imagine, 
+.review-quote, 
+.plumbus-x-reviews, 
+.section-header,
+.section-sub-header,
+.video-caption,
+.features-list {
+  text-align: center;
+}
+
+#header-img, 
+#footer-img {
+ width: 100%;
+}
+
+#footer-img{
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.imagine, 
+.review-quote {
+  font-size: 2rem;
+  width: 100%;
+}
+
+/*video*/
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px pink;
+}
+
+
+.video-caption {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+/*nav*/
+#nav-bar {
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  text-decoration: none;
+  background-color: black;
+  border: 3px solid pink;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: 0 0 10px pink;
+}
+
+.nav-link {
+  font-size: 3rem;
+  font-family: sans-serif;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.nav-link:first-of-type {
+  border-bottom-left-radius: 8px;
+}
+
+.nav-link:last-of-type {
+  border-bottom-right-radius: 8px;
+}
+
+/*sections*/
+.section-header, 
+.reviewed-by {
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section-divider, 
+.hidden-divider {
+  margin: 11rem 5rem;
+}
+
+.section-sub-header {
+  padding-bottom: 1rem;
+}
+
+.section-divider, 
+.submit {
+  border: 1px solid pink;
+  box-shadow: 0 0 10px pink;
+}
+
+.section-divider:first-of-type {
+  margin-top: 0;
+}
+
+/*reviews*/
+.plumbus-x-reviews, 
+.reviews-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  padding: 0 5rem;
+  place-items: center;
+}
+
+.review {
+  margin-top: 2rem;
+  border-radius: 8px;
+  border: 1px solid pink;
+  box-shadow: 0 0 10px pink;
+}
+
+.reviewed-by {
+  font-size: 2rem;
+  font-weight: bold;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.review-quote {
+  font-size: 2.4rem;
+  font-family: "Raleway", sans-serif;
+  padding: 2rem;
+  text-align: justify;
+}
+
+.review-quote::first-letter {
+  font-size: 6rem;
+  color: pink;
+}
+
+.review-quote::before, 
+.review-quote::after {
+  content: '';
+}
+
+.review-decoration {
+  border: 1px solid pink;
+  width: 30%;
+  margin-left: 35%;
+}
+
+.rating {
+  color: yellow;
+  font-size: 4rem;
+  width: 100%;
+}
+
+/*form*/
+.form-wrapper {
+  width: 100%;
+  padding: 0 5rem;
+}
+
+form {
+  margin-top: 5rem;
+  box-shadow: 0 0 10px pink;
+}
+
+form,
+.submit {
+  border: 2px solid pink;
+  padding: 1.5rem;
+  width: 50%;
+  margin-left: 25%;
+}
+
+form > label {
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list {
+  list-style: none;
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features-list > li {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.features-list > li::before {
+  content: '- ';
+}
+
+input:not(.submit) {
+  margin: 8px auto;
+  width: 100%;
+  min-height: 3em;
+}
+
+.submit {
+  background-color: black;
+  color: #fff;
+}
+
+/*hover*/
+.nav-link:hover {
+  background-color: pink;
+}
+
+.video-wrapper iframe:hover,
+.review:hover, 
+form:hover,
+.features-list > li:hover {
+  box-shadow: 0 0 30px pink;
+}
+
+.features-list > li:hover {
+  background-color: pink;
+  color: #000;
+}
+
+input:hover {
+  background-color: lightpink;
+}
