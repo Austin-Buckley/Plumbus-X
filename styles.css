@@ -195,7 +195,7 @@ body {
 form {
   margin-top: 5rem;
   box-shadow: 0 0 10px pink;
-  min-width: 325px;
+  min-width: 50%;
 }
 
 form,
